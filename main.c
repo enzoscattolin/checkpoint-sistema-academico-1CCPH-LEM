@@ -1,39 +1,36 @@
 #include <stdio.h>
-
-int main(){
-     int opcao, presenca;
-    float nota1, nota2, media;
-    printf("______________Menu_______________\n");
-    printf("Selecione a opcao\n");
-    printf("1 - caucular a nota do aluno\n");
-    printf("2 - verificar presenca do aluno\n");
-    printf("______________Menu_______________\n");
-
-    printf("selecione a opcao desejada: \n");
-    scanf("%d", &opcao);
-    switch (opcao){
-        case 1:      
-    printf("______________Cauculadora______________\n");        
-    printf("digite sua primeira nota:");
-    scanf("%f", &nota1);
-    printf("digite sua segunda nota:");
-    scanf("%f", &nota2);
-    media = (nota1 + nota2)/2;
-    printf("A media e: %.2f \n", media );
-   
-    if(media >= 9 ){
-    printf("Exelente, cotinue assim");
-    } else if(media >= 6){
-    printf("Aprovado");
-    } else if(media >= 6){
-    printf("recuperacao");
-    } else{
-    printf("reprovado");}
-
-
-    break;
-
-     case 2: // Calcular média
+ 
+int main() {
+    float nota1 = 0, nota2 = 0, media = 0;
+    float a, b, c;
+    int opcao;
+    int notasInseridas = 0;
+ 
+    while (1) {
+        printf("\n==============================\n");
+        printf(" SISTEMA EQUIPE XYZ\n");
+        printf("==============================\n");
+        printf("1 - Inserir notas\n");
+        printf("2 - Calcular media\n");
+        printf("3 - Verificar \n");
+        printf("4 - Exibir resultado\n");
+        printf("5 - Calcular derivada\n");
+        printf("6 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+ 
+        switch (opcao) {
+ 
+            case 1: // Inserir notas
+                printf("Digite a nota 1: ");
+                scanf("%f", &nota1);
+ 
+                printf("Digite a nota 2: ");
+                scanf("%f", &nota2);
+ 
+                notasInseridas = 1;
+                break;
+             case 2: // Calcular média
                 if (notasInseridas) {
                     media = (nota1 + nota2) / 2;
                     printf("Media calculada: %.2f\n", media);
@@ -41,8 +38,9 @@ int main(){
                     printf("Insira as notas primeiro!\n");
                 }
                 break;
-
-        case 3: // Verificar situação
+ 
+ 
+            case 3: // Verificar situação
                     if (media >= 7) {
                         printf("Aprovado");
                     } else if (media >= 5) {
@@ -51,19 +49,18 @@ int main(){
                         printf("Reprovado");
                     }
                 break;
-                
-        case 4: // Exibir resultado
+ 
+ 
+            case 4: // Exibir resultado
                 printf("\n------ RESULTADO ------\n");
                 printf("Nota 1: %.2f\n", nota1);
                 printf("Nota 2: %.2f\n", nota2);
                 printf("Media: %.2f\n", media);
                 printf("----------------------\n");
                 break;
-                    case 6: // Sair
-                printf("Saindo do sistema...\n");
-                return 0;
-                
-        case 5: { // Calcular derivada
+ 
+ 
+            case 5: { // Calcular derivada
                 printf("Digite o valor de a: ");
                 scanf("%f", &a);
  
@@ -76,6 +73,22 @@ int main(){
                 scanf("%f", &c);
  
  
+                float X = 2 * a;
+ 
+ 
+                printf("Derivada da funcao:\n");
+                printf("f'(x) = %.2fx + %.2f\n", X, b);
+ 
+ 
+                break;
+            }
+ 
+ 
+            case 6: // Sair
+                printf("Saindo do sistema...\n");
+                return 0;
+ 
+ 
             default:
                 printf("Opcao invalida!\n");
  
@@ -84,4 +97,3 @@ int main(){
     }
  
 }
- 
