@@ -12,7 +12,7 @@ int main(){
     printf("selecione a opcao desejada: \n");
     scanf("%d", &opcao);
     switch (opcao){
-case 1:      
+        case 1:      
     printf("______________Cauculadora______________\n");        
     printf("digite sua primeira nota:");
     scanf("%f", &nota1);
@@ -33,7 +33,7 @@ case 1:
 
     break;
 
-case 2: // Calcular média
+     case 2: // Calcular média
                 if (notasInseridas) {
                     media = (nota1 + nota2) / 2;
                     printf("Media calculada: %.2f\n", media);
@@ -41,8 +41,18 @@ case 2: // Calcular média
                     printf("Insira as notas primeiro!\n");
                 }
                 break;
+
+        case 3: // Verificar situação
+                    if (media >= 7) {
+                        printf("Aprovado");
+                    } else if (media >= 5) {
+                        printf("Recuperacao");
+                    } else {
+                        printf("Reprovado");
+                    }
+                break;
                 
-case 4: // Exibir resultado
+        case 4: // Exibir resultado
                 printf("\n------ RESULTADO ------\n");
                 printf("Nota 1: %.2f\n", nota1);
                 printf("Nota 2: %.2f\n", nota2);
