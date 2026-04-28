@@ -62,6 +62,18 @@ int main(){
                     case 6: // Sair
                 printf("Saindo do sistema...\n");
                 return 0;
+                
+        case 5: { // Calcular derivada
+                printf("Digite o valor de a: ");
+                scanf("%f", &a);
+ 
+ 
+                printf("Digite o valor de b: ");
+                scanf("%f", &b);
+ 
+ 
+                printf("Digite o valor de c: ");
+                scanf("%f", &c);
  
  
             default:
