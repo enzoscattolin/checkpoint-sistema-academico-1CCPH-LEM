@@ -9,7 +9,31 @@ int main(){
     printf("1 - caucular a nota do aluno\n");
     printf("2 - verificar presenca do aluno\n");
     printf("______________Menu_______________\n");
-    
+
+    printf("selecione a opcao desejada: \n");
+    scanf("%d", &opcao);
+    switch (opcao){
+    case 1:      
+    printf("______________Cauculadora______________\n");        
+    printf("digite sua primeira nota:");
+    scanf("%f", &nota1);
+    printf("digite sua segunda nota:");
+    scanf("%f", &nota2);
+    media = (nota1 + nota2)/2;
+    printf("A media e: %.2f \n", media );
+   
+    if(media >= 9 ){
+    printf("Exelente, cotinue assim");
+    } else if(media >= 6){
+    printf("Aprovado");
+    } else if(media >= 6){
+    printf("recuperacao");
+    } else{
+    printf("reprovado");}
+
+
+    break;
+
 case 2: // Calcular média
                 if (notasInseridas) {
                     media = (nota1 + nota2) / 2;
