@@ -1,3 +1,15 @@
+#include <stdio.h>
+
+
+int main(){
+     int opcao, presenca;
+    float nota1, nota2, media;
+    printf("______________Menu_______________\n");
+    printf("Selecione a opcao\n");
+    printf("1 - caucular a nota do aluno\n");
+    printf("2 - verificar presenca do aluno\n");
+    printf("______________Menu_______________\n");
+    
 case 2: // Calcular média
                 if (notasInseridas) {
                     media = (nota1 + nota2) / 2;
