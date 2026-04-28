@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(){
      int opcao, presenca;
     float nota1, nota2, media;
@@ -13,7 +12,7 @@ int main(){
     printf("selecione a opcao desejada: \n");
     scanf("%d", &opcao);
     switch (opcao){
-    case 1:      
+case 1:      
     printf("______________Cauculadora______________\n");        
     printf("digite sua primeira nota:");
     scanf("%f", &nota1);
