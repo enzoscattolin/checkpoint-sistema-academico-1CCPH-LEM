@@ -59,3 +59,17 @@ int main(){
                 printf("Media: %.2f\n", media);
                 printf("----------------------\n");
                 break;
+                    case 6: // Sair
+                printf("Saindo do sistema...\n");
+                return 0;
+ 
+ 
+            default:
+                printf("Opcao invalida!\n");
+ 
+                   return 0;
+        }
+    }
+ 
+}
+ 
