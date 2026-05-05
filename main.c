@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+
 int main() {
     float nota1 = 0, nota2 = 0, media = 0;
     float a, b, c;
@@ -8,7 +8,7 @@ int main() {
  
     while (1) {
         printf("\n==============================\n");
-        printf(" SISTEMA EQUIPE XYZ\n");
+        printf(" SISTEMA EQUIPE LEM\n");
         printf("==============================\n");
         printf("1 - Inserir notas\n");
         printf("2 - Calcular media\n");
